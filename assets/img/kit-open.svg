@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+ <defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9cfd8"/><stop offset=".45" stop-color="#e7e2d6"/><stop offset=".55" stop-color="#8f9a8b"/><stop offset="1" stop-color="#6f765f"/></linearGradient>
+  <linearGradient id="vial" x1="0" x2="1"><stop offset="0" stop-color="#9fb27c"/><stop offset=".5" stop-color="#cad7ab"/><stop offset="1" stop-color="#93a670"/></linearGradient>
+  <filter id="b"><feGaussianBlur stdDeviation="6"/></filter><filter id="sh"><feGaussianBlur stdDeviation="14"/></filter>
+ </defs>
+ <rect width="800" height="800" fill="#ece9e2"/>
+ <rect x="70" y="60" width="660" height="680" rx="6" fill="#f7f6f2"/>
+ <rect x="110" y="100" width="580" height="600" fill="url(#sky)" filter="url(#b)"/>
+ <path d="M110 100h580v600H110z" fill="none" stroke="#ddd8cc" stroke-width="10"/>
+ <text x="430" y="190" font-family="Georgia,serif" font-style="italic" font-size="22" fill="#fff" opacity=".85" transform="rotate(14 430 190)">We read yours</text>
+ <ellipse cx="420" cy="430" rx="30" ry="34" fill="#4c5146" opacity=".55"/>
+ <g transform="rotate(32 410 420)">
+  <ellipse cx="420" cy="640" rx="40" ry="10" fill="#2e3329" opacity=".35" filter="url(#sh)"/>
+  <rect x="392" y="200" width="56" height="400" rx="24" fill="url(#vial)"/>
+  <rect x="397" y="208" width="12" height="380" rx="6" fill="#fff" opacity=".35"/>
+  <path d="M394 580 Q420 660 446 580Z" fill="#eef1ea"/>
+  <rect x="386" y="168" width="68" height="46" rx="12" fill="#fafaf8"/>
+  <text transform="translate(432 330) rotate(90)" font-family="Helvetica,Arial,sans-serif" font-weight="700" font-size="24" fill="#4f5a38">Vestige</text>
+ </g>
+ <text x="300" y="610" font-family="Georgia,serif" font-style="italic" font-size="15" fill="#fff" opacity=".8" transform="rotate(14 300 610)">Personal insight from a single strand of hair.</text>
+</svg>

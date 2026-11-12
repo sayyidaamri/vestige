@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Shopping Cart — Vestige</title>
+<meta name="description" content="Your cart.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/SourceSerif4-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body data-page="cart">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header site-header--min"><div class="container min-hdr"><a href="index.html" class="logo " aria-label="Vestige — home"><svg class="glyph" viewBox="0 0 26 24" height="24" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path class="lg-bar" d="M3 12a10 10 0 0 1 10-10"/><path class="lg-bar" d="M23 12a10 10 0 0 1-10 10"/><path class="lg-bar" d="M8 12a5 5 0 0 1 5-5"/><path class="lg-bar" d="M18 12a5 5 0 0 1-5 5"/></g><circle class="lg-bar" cx="13" cy="12" r="1.9" fill="currentColor"/></svg><span class="logo-word">Vestige</span></a></div></header>
+<main id="main" class="cart-pg"><div class="container cart-grid">
+  <div class="cart-side"><span class="pill">Summary</span></div>
+  <div class="cart-main" data-cart>
+    <div class="cart-empty" data-empty><h1 class="h2">Your cart is empty</h1><a class="btn btn--green" href="product.html">Shop now</a></div>
+    <div class="cart-items" data-items hidden></div>
+    <div class="cart-sum">
+      <div class="cart-row" data-sub-row hidden><span>Subtotal</span><span data-sub>$0.00</span></div>
+      <div class="cart-row" data-ship-row hidden><span>Shipping</span><span>Free</span></div>
+      <div class="cart-row tot"><span>Total</span><span data-total>$0.00</span></div>
+      <div class="cart-acts"><a class="back" href="product.html"><span class="round-btn"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Continue shopping</a><button class="btn btn--grey" type="button" data-checkout disabled>Proceed to payment</button></div>
+    </div>
+  </div>
+  <div class="cart-vis"><img src="assets/img/kit-open.svg" alt=""><p class="notes"><span>Results within 15 business days</span><span>Free shipping and sample return</span></p></div>
+</div></main>
+<div class="modal" id="nl-modal" role="dialog" aria-modal="true" aria-labelledby="nl-h" hidden>
+  <div class="modal-bg" data-close></div>
+  <div class="modal-box nl">
+    <button class="modal-x" type="button" aria-label="Close" data-close><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1 1l10 10M11 1L1 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+    <div class="nl-l">
+      <div class="nl-step" data-step="form">
+        <h2 class="h3" id="nl-h">Limited Time<br>10% off</h2>
+        <p class="body2">Find out what your surroundings leave behind. Join our list and take 10% off your first test.</p>
+        <form class="nl-form" novalidate>
+          <label class="sr-only" for="nl-email">Email</label>
+          <input class="field-line" id="nl-email" type="email" placeholder="Email" autocomplete="email" required>
+          <p class="err-msg" aria-live="polite"></p>
+          <button class="btn btn--green" type="submit">Get 10% Off</button>
+          <button class="nl-no" type="button" data-close>No, thanks</button>
+        </form>
+      </div>
+      <div class="nl-step" data-step="done" hidden>
+        <h2 class="h3">You're on the list</h2>
+        <p class="body2">Use code <strong>VESTIGE10</strong> at checkout. We've also sent it to your inbox.</p>
+        <div class="nl-form"><a class="btn btn--green" href="product.html">Shop the test</a></div>
+      </div>
+    </div>
+    <div class="nl-r"><img src="assets/img/kit.svg" alt="" width="390" height="500"></div>
+  </div>
+</div>
+<div class="modal" id="dialog" role="dialog" aria-modal="true" aria-labelledby="dlg-h" hidden>
+  <div class="modal-bg" data-close></div>
+  <div class="modal-box dialog-box">
+    <button class="modal-x" type="button" aria-label="Close" data-close><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1 1l10 10M11 1L1 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+    <h2 class="h3" id="dlg-h">Title</h2><p class="dlg-p">Body</p>
+    <button class="btn btn--green" type="button" data-close>Got it</button>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/forms.js" defer></script>
+</body>
+</html>
