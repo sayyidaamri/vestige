@@ -1,7 +1,6 @@
 # Vestige — static HTML site
 
-An original site ("Vestige", an at-home hair test for environmental exposure) that follows the layout,
-motion and interactions of a reference site. All copy, brand marks, names and media are new.
+An original site ("Vestige", an at-home hair test for environmental exposure). All copy, brand marks, names and media are new.
 
 ## How to open it
 Open `index.html` in a browser (double-click). No server or build step is needed.
