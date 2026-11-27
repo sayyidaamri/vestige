@@ -1,3 +1,5 @@
+![Preview](docs/preview/homepage.gif)
+
 # Vestige — static HTML site
 
 An original site ("Vestige", an at-home hair test for environmental exposure). All copy, brand marks, names and media are new.
